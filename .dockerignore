@@ -1,0 +1,14 @@
+.git
+.gitignore
+.DS_Store
+
+alphaguard_env
+client/node_modules
+client/dist
+notebooks
+tests
+
+**/__pycache__
+**/*.pyc
+
+client

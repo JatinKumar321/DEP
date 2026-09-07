@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: dep-midsem-backend
+    env: docker
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+    healthCheckPath: /
+    plan: starter
+    envVars:
+      - key: FRONTEND_ORIGINS
+        sync: false
+      - key: PORT
+        value: "8000"
